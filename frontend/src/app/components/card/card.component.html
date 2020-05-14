@@ -1,0 +1,22 @@
+<div class="main-div">
+<mat-card class="example-card" class="content-center">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Contador de Capital de Graças</mat-card-title>
+      <mat-card-subtitle>Um presente dos nossos oito meses de namoro para a vida</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <span>
+        Atualmente temos {{ quantityOfCapitals }} dezenas rezadas
+      </span>
+      <form>
+        <mat-form-field>
+          <input matInput placeholder="quantidade" [(ngModel)]="capitalOfGraces.quantity" name="quantity" type="number">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions  (click)="createCapitalOfGraces()">
+      <button mat-raised-button>Adicionar CG</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
